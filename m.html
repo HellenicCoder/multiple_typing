@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta data-name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="m.css">
+    
+    <!--===== Boxicons CSS =====-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Multiple Typing|| Yahya Nebgui</title>
+</head>
+<body>
+     <div class="container">
+        <span class="text first-text">I'm a</span>
+        <span class="text sec-text">freelancer</span>
+     </div>
+     <script>
+        const text = document.querySelector(".sec-text");
+
+        const textLoad = () => {
+            setTimeout(() => {
+                text.textContent = "freelancer";
+            }, 0);
+            setTimeout(() => {
+                text.textContent = "Yahya Nebgui";
+            }, 4000);
+            setTimeout(() => {
+                text.textContent = "I'm 19 Year Old";
+            }, 8000);
+        }
+        textLoad();
+        setInterval(textLoad, 12000);
+     </script>
+</body>
+</html>
